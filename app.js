@@ -1,4 +1,5 @@
 // 🚨 Intentional Secret (This should FAIL)
-const API_KEY = "sk_live_1234567890SECRETKEY";
+// ✅ Secure version
+const API_KEY = process.env.API_KEY;
 
-console.log("App running...");
+console.log("App running securely...");
